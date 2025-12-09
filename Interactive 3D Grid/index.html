@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Interactive 3D Grid</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div id="ui">
+    <h1>Interactive 3D Grid</h1>
+    <p>Drag to rotate • Scroll to zoom</p>
+  </div>
+
+  <!-- Tell the browser what "three" and "three/addons" mean -->
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.164.0/build/three.module.js",
+      "three/addons/": "https://unpkg.com/three@0.164.0/examples/jsm/"
+    }
+  }
+  </script>
+
+  <!-- Main script as ES module -->
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
